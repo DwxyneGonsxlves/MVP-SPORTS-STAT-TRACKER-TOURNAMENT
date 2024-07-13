@@ -1,0 +1,167 @@
+/* src/App.css */
+body {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+button {
+  padding: 5px;
+  margin: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #08024d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #5d51d9;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.team {
+  width: 48%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2.5px solid #b82309;
+}
+
+.middle-section {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.timer {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-score {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.fouls, .timeouts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.player-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0;
+  border-bottom: 1.5px solid #b82309;
+  padding: 2px 0;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1.5px solid #b82309;
+}
+
+.player-row p {
+  margin: 0 2px;
+}
+
+.player-number {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.player-name {
+  font-size: 10px;
+}
+
+.player-stats p {
+  font-weight: bold;
+}
+
+.team-scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team1-score, .team2-score {
+  font-size: 36px;
+  margin: 0 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .team, .middle-section {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .player-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .player-row p, .player-row button {
+    margin: 2px 0;
+  }
+
+  .team1-score, .team2-score, .timer {
+    font-size: 24px;
+  }
+}
+
+#timeout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
